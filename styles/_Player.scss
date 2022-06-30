@@ -1,0 +1,74 @@
+.player {
+  height: 20vh;
+  //   background-color: lightcoral;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.Time-control {
+  display: flex;
+  align-items: center;
+  //   background-color: lightblue;
+  width: 50%;
+  justify-content: space-evenly;
+
+  input {
+    width: 100%;
+    padding: 1rem 0;
+    -webkit-appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  p {
+    padding: 1rem;
+  }
+}
+.Play-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  //   background-color: lightcyan;
+  width: 30%;
+  svg {
+    cursor: pointer;
+  }
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  background: #000;
+}
+.trackVisual {
+  position: relative;
+  width: 100%;
+  background-color: lightgreen;
+  height: 0.8rem;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.trackAnimation {
+  // border: 2px solid red;
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(0%);
+  overflow: none !important;
+  pointer-events: none;
+  // border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+  .Time-control {
+    width: 80%;
+  }
+  .Play-control {
+    width: 75%;
+  }
+}

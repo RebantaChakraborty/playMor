@@ -1,0 +1,30 @@
+.nav {
+  h1 {
+    color: rgb(124, 119, 119);
+  }
+  * {
+    font-family: "Kaushan Script", cursive;
+  }
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  button {
+    padding: 0.5rem;
+    cursor: pointer;
+    border: 2px solid rgb(170, 166, 166);
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: rgb(170, 166, 166);
+      color: white;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav {
+    button {
+      position: relative;
+      z-index: 2;
+    }
+  }
+}

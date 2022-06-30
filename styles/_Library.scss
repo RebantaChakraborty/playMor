@@ -1,0 +1,73 @@
+.Library {
+  width: 20rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+  height: 100%;
+  box-shadow: 2px 2px 50px rgb(177, 172, 172);
+  background-color: whitesmoke;
+  h2 {
+    padding-left: 5.5rem;
+    color: #f68e9d;
+    font-family: "Kaushan Script", cursive;
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+  }
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+}
+.Library-song {
+  display: flex;
+  flex-direction: row;
+  img {
+    width: 30%;
+  }
+  align-items: center;
+
+  padding: 1rem 2rem;
+  * {
+    cursor: pointer;
+  }
+  &:hover {
+    background-color: rgb(226, 155, 167);
+  }
+  transition: background-color 0.8s ease;
+}
+
+.songDescription {
+  padding-left: 1rem;
+  h3 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 0.7rem;
+  }
+}
+// .songDescription
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+}
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+  border: transparent;
+}
+.selectedSong {
+  background-color: #ace1af;
+}
+.openedLibrary {
+  transform: translateX(0%);
+}
+@media screen and (max-width: 768px) {
+  .Library {
+    width: 100%;
+  }
+}
